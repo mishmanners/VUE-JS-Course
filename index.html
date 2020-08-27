@@ -1,0 +1,18 @@
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <script src="main.js"defer></script>
+<!-- <meta name="viewport" content="width=device-width"> -->
+<title>MishManners' Epic Merch Store</title>
+<link rel="stylesheet" type="text/css" href="product_style.css">
+</head>
+<body>
+    <div class="nav-bar"></div>
+    <div id="app">
+        <div class="cart">
+            <p>Cart({{cart.length}})</p>
+        </div>
+        <product :premium="premium" @add-to-cart="updateCart"></product>
+    </div>
+</body>
+</html>
