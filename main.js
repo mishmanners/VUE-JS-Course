@@ -1,3 +1,5 @@
+// Final code from Vue Mastery Course
+
 var eventBus = new Vue()
 
 Vue.component('product', {
