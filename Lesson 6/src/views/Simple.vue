@@ -11,7 +11,7 @@ export default {
     beforeEnter(el) {
       // starting style
       el.style.opacity = 0
-      el.style.transform = 'scale(0,0')
+      el.style.transform = 'scale(0,0)'
     },
     enter(el, done) {
       // style to transition to once entered
@@ -19,6 +19,7 @@ export default {
         duration: 1,
         opacity: 1,
         scale: 1,
+        ease: 'bounce.out',
         onComplete: done
       })
     }
