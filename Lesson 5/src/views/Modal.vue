@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>This is the modal page</h1>
+    <h1>This is the awesome donut page. Donuts for dayz</h1>
 
     <button @click="toggleModal">Open</button>
 
