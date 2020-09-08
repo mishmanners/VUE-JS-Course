@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>This is the modal page</h1>
+    <h1>Bestest Donut Streams</h1>
 
     <button @click="toggleModal">Open</button>
 

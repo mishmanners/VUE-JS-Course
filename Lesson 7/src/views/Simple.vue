@@ -32,7 +32,7 @@ export default {
   height: 6.5em;
   width: 6.5em;
   border-radius: 1%;
-  background-color: #16c0b0;
+  background-color: #00A9FF;
   box-shadow: 0.08em 0.03em 0.4em #ababab;
 }
 </style>

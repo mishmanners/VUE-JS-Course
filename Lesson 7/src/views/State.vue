@@ -1,16 +1,29 @@
 <template>
   <div>
-    <div :style="{ width: number + 'px' }" class="bar">
+    <div :style="{ width: tweenedNumber + 'px' }" class="bar">
       <span>{{ number }}</span>
     </div>
   </div>
 </template>
 
 <script>
-export default {
+import gsap from 'gsap'
+export default
+{
   data() {
     return {
-      number: 0
+      number: 0,
+      tweenedNumber: 0
+    }
+  },
+  watch: {
+    number(newValue) {
+      //animate our data
+      gsap.to(this.$data, {
+        duration: 1,
+        ease: 'circ.out',
+        tweenedNumber: newValue
+      })
     }
   },
   methods: {
@@ -28,7 +41,7 @@ export default {
 .bar {
   padding: 5px;
   background-color: #2c3e50;
-  border: 1px #16c0b0 solid;
+  border: 1px #00A9FF solid;
   min-width: 20px;
 }
 .bar span {

@@ -48,11 +48,11 @@ export default new Router({
       component: () =>
         import(/* webpackChunkName: "state" */ './views/State.vue')
     },
-    {
+    /* {
       path: '/timeline',
       name: 'timeline',
       component: () =>
-        import(/* webpackChunkName: "timeline" */ './views/Timeline.vue')
-    }
+        import( webpackChunkName: "timeline" './views/Timeline.vue')
+    } */
   ]
 })
