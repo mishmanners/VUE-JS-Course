@@ -1,7 +1,7 @@
 <template>
   <div>
     <button @click="isOpen = !isOpen">
-      My Profile
+      MishManners
     </button>
 
     <transition
