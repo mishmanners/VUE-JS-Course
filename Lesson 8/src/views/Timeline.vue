@@ -11,7 +11,9 @@ import gsap from 'gsap'
 
 export default {
   mounted() {
-    // timeline will go here
+    // timeline is here
+    let tl = gsap.timeline()
+    tl.to('.first', { x: 700, duration: 2, ease: 'expo.out'})
   }
 }
 </script>
